@@ -15,6 +15,8 @@ namespace MVCWebApplication.Web.Secue
             if (user == null)
             {
 
+
+
                 return false;
             }
             return true;
