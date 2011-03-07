@@ -14,9 +14,6 @@ namespace MVCWebApplication.Web.Secue
             User user = (User)context.Session["logonUser"];
             if (user == null)
             {
-
-
-
                 return false;
             }
             return true;
