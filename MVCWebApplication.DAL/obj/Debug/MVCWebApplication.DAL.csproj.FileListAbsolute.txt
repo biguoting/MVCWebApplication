@@ -1,0 +1,14 @@
+D:\project\C#project\MVCWebApplication\MVCWebApplication.DAL\bin\Debug\MVCWebApplication.DAL.dll
+D:\project\C#project\MVCWebApplication\MVCWebApplication.DAL\bin\Debug\MVCWebApplication.DAL.pdb
+D:\project\C#project\MVCWebApplication\MVCWebApplication.DAL\obj\Debug\ResolveAssemblyReference.cache
+D:\project\C#project\MVCWebApplication\MVCWebApplication.DAL\obj\Debug\MVCWebApplication.DAL.dll
+D:\project\C#project\MVCWebApplication\MVCWebApplication.DAL\obj\Debug\MVCWebApplication.DAL.pdb
+D:\project\C#project\MVCWebApplication\MVCWebApplication.DAL\bin\Debug\Castle.DynamicProxy.dll
+D:\project\C#project\MVCWebApplication\MVCWebApplication.DAL\bin\Debug\IBatisNet.Common.dll
+D:\project\C#project\MVCWebApplication\MVCWebApplication.DAL\bin\Debug\IBatisNet.DataAccess.dll
+D:\project\C#project\MVCWebApplication\MVCWebApplication.DAL\bin\Debug\MVCWebApplication.Models.dll
+D:\project\C#project\MVCWebApplication\MVCWebApplication.DAL\bin\Debug\MVCWebApplication.Models.pdb
+D:\project\C#project\MVCWebApplication\MVCWebApplication.DAL\bin\Debug\IBatisNet.Common.xml
+D:\project\C#project\MVCWebApplication\MVCWebApplication.DAL\bin\Debug\IBatisNet.DataAccess.xml
+D:\project\C#project\MVCWebApplication\MVCWebApplication.DAL\bin\Debug\IBatisNet.DataMapper.dll
+D:\project\C#project\MVCWebApplication\MVCWebApplication.DAL\bin\Debug\IBatisNet.DataMapper.xml

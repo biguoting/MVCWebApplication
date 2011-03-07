@@ -1,0 +1,214 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F1A6490C-F027-4E55-A4B0-F69551EE1F40}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MVCWebApplication.Web</RootNamespace>
+    <AssemblyName>MVCWebApplication.Web</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Castle.Components.Binder, Version=1.0.3.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL" />
+    <Reference Include="Castle.Components.Common.EmailSender, Version=1.0.3.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL" />
+    <Reference Include="Castle.Components.Validator, Version=1.0.3.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL" />
+    <Reference Include="Castle.Core, Version=1.0.3.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL" />
+    <Reference Include="Castle.DynamicProxy, Version=1.1.5.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL" />
+    <Reference Include="Castle.MonoRail.Framework, Version=1.0.3.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL" />
+    <Reference Include="Castle.MonoRail.Framework.Views.NVelocity, Version=1.0.3.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL" />
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="NVelocity, Version=0.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="content\scripts\jquery-1.4.4.min.js" />
+    <Content Include="content\themes\default\easyui.css" />
+    <Content Include="content\themes\default\images\button_a_bg.gif" />
+    <Content Include="content\themes\default\images\button_plain_hover.png" />
+    <Content Include="content\themes\default\images\button_span_bg.gif" />
+    <Content Include="content\themes\default\images\calendar_nextmonth.gif" />
+    <Content Include="content\themes\default\images\calendar_nextyear.gif" />
+    <Content Include="content\themes\default\images\calendar_prevmonth.gif" />
+    <Content Include="content\themes\default\images\calendar_prevyear.gif" />
+    <Content Include="content\themes\default\images\combo_arrow.gif" />
+    <Content Include="content\themes\default\images\datagrid_header_bg.gif" />
+    <Content Include="content\themes\default\images\datagrid_sort_asc.gif" />
+    <Content Include="content\themes\default\images\datagrid_sort_desc.gif" />
+    <Content Include="content\themes\default\images\datagrid_title_bg.png" />
+    <Content Include="content\themes\default\images\layout_button_down.gif" />
+    <Content Include="content\themes\default\images\layout_button_left.gif" />
+    <Content Include="content\themes\default\images\layout_button_right.gif" />
+    <Content Include="content\themes\default\images\layout_button_up.gif" />
+    <Content Include="content\themes\default\images\menu.gif" />
+    <Content Include="content\themes\default\images\menu_downarrow.png" />
+    <Content Include="content\themes\default\images\menu_rightarrow.png" />
+    <Content Include="content\themes\default\images\menu_sep.png" />
+    <Content Include="content\themes\default\images\menu_split_downarrow.png" />
+    <Content Include="content\themes\default\images\messager_error.gif" />
+    <Content Include="content\themes\default\images\messager_info.gif" />
+    <Content Include="content\themes\default\images\messager_question.gif" />
+    <Content Include="content\themes\default\images\messager_warning.gif" />
+    <Content Include="content\themes\default\images\pagination_first.gif" />
+    <Content Include="content\themes\default\images\pagination_last.gif" />
+    <Content Include="content\themes\default\images\pagination_load.png" />
+    <Content Include="content\themes\default\images\pagination_loading.gif" />
+    <Content Include="content\themes\default\images\pagination_next.gif" />
+    <Content Include="content\themes\default\images\pagination_prev.gif" />
+    <Content Include="content\themes\default\images\panel_loading.gif" />
+    <Content Include="content\themes\default\images\panel_title.png" />
+    <Content Include="content\themes\default\images\panel_tools.gif" />
+    <Content Include="content\themes\default\images\panel_tool_collapse.gif" />
+    <Content Include="content\themes\default\images\panel_tool_expand.gif" />
+    <Content Include="content\themes\default\images\spinner_arrow_down.gif" />
+    <Content Include="content\themes\default\images\spinner_arrow_up.gif" />
+    <Content Include="content\themes\default\images\tabs_active.png" />
+    <Content Include="content\themes\default\images\tabs_close.gif" />
+    <Content Include="content\themes\default\images\tabs_enabled.png" />
+    <Content Include="content\themes\default\images\tabs_leftarrow.png" />
+    <Content Include="content\themes\default\images\tabs_rightarrow.png" />
+    <Content Include="content\themes\default\images\tree_arrows.gif" />
+    <Content Include="content\themes\default\images\tree_checkbox_0.gif" />
+    <Content Include="content\themes\default\images\tree_checkbox_1.gif" />
+    <Content Include="content\themes\default\images\tree_checkbox_2.gif" />
+    <Content Include="content\themes\default\images\tree_file.gif" />
+    <Content Include="content\themes\default\images\tree_folder.gif" />
+    <Content Include="content\themes\default\images\tree_folder_open.gif" />
+    <Content Include="content\themes\default\images\tree_loading.gif" />
+    <Content Include="content\themes\default\images\validatebox_pointer.gif" />
+    <Content Include="content\themes\default\images\validatebox_warning.png" />
+    <Content Include="content\themes\gray\easyui.css" />
+    <Content Include="content\themes\icon.css" />
+    <Content Include="content\themes\icons\back.png" />
+    <Content Include="content\themes\icons\cancel.png" />
+    <Content Include="content\themes\icons\cut.png" />
+    <Content Include="content\themes\icons\edit_add.png" />
+    <Content Include="content\themes\icons\edit_remove.png" />
+    <Content Include="content\themes\icons\filesave.png" />
+    <Content Include="content\themes\icons\help.png" />
+    <Content Include="content\themes\icons\no.png" />
+    <Content Include="content\themes\icons\ok.png" />
+    <Content Include="content\themes\icons\pencil.png" />
+    <Content Include="content\themes\icons\print.png" />
+    <Content Include="content\themes\icons\redo.png" />
+    <Content Include="content\themes\icons\reload.png" />
+    <Content Include="content\themes\icons\search.png" />
+    <Content Include="content\themes\icons\undo.png" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PeopleController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\IBaseHandler.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Secue\AuthenticationFilter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="providers.config" />
+    <Content Include="dao.config" />
+    <Content Include="sqlMap.config" />
+    <None Include="Views\home\Index.vm" />
+    <None Include="Views\home\Parse.vm" />
+    <None Include="Views\home\EasyUI.vm" />
+    <None Include="Views\layouts\default.vm" />
+    <None Include="Views\people\Index.vm" />
+    <None Include="Views\User\Index.vm" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MVCWebApplication.DAL\MVCWebApplication.DAL.csproj">
+      <Project>{FF7F3DCB-9998-4BE9-A46F-09EDC6D331DB}</Project>
+      <Name>MVCWebApplication.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MVCWebApplication.Models\MVCWebApplication.Models.csproj">
+      <Project>{DEE93575-9A82-45B8-B96D-742B143261D6}</Project>
+      <Name>MVCWebApplication.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MVCWebApplication.Utils\MVCWebApplication.Utils.csproj">
+      <Project>{BB318BE5-2E5A-4862-9A1E-0DA74B9287B1}</Project>
+      <Name>MVCWebApplication.Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2902</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

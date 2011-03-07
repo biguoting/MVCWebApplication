@@ -1,0 +1,49 @@
+﻿#capturefor(title)
+首页
+#end
+
+#capturefor(head)
+<script type="text/javascript">  
+(function(){
+    $(document).ready(function(){
+        $('#chkboxgroup1').click(function(){      
+            $('input[name=grp1]').attr('checked', $(this).attr('checked')); 
+        });
+         $('#chkboxgroup2').click(function(){      
+            $('input[name=grp2]').attr('checked', $(this).attr('checked')); 
+        }); 
+        $('#checkPattern').click(function(){ 
+            $('#checkResult').html('');
+            var patt=$('#urlPattern').attr('value');
+            var str=$('#patternStr').attr('value');
+            jQuery.get('/home/checkrouting.htm',{'pattern':patt,'replaceStr':str},function(data){
+                $('#checkResult').html('验证结果：'+data);
+             });
+        });  
+    });
+
+})(); 
+
+</script>  
+#end
+#if(${param})
+参数param=${param}
+#end
+<h3>使用jQuery实现全选/取消全选功能</h3>
+<input type="checkbox" id="chkboxgroup1" />选中GROUPA<br/>  
+GROUPA:<br/>
+<input type="checkbox" name="grp1" />11<br/>  
+<input type="checkbox" name="grp1" />22<br/>  
+<input type="checkbox" name="grp1" />33<br/><br/>  
+
+<input type="checkbox" id="chkboxgroup2"/>选中GROUPB<br/> 
+GROUPB:<br/>
+<input type="checkbox" name="grp2" />44<br/>  
+<input type="checkbox" name="grp2" />55<br/>  
+<input type="checkbox" name="grp2" />66<br/> 
+<hr />
+<input type="text" id="urlPattern" name="urlPattern" value="^/home/([\S]+)$"/> 
+<input type="text" id="patternStr" name="patternStr"/> 
+
+<input type="button" value="check" id="checkPattern" name="checkPattern"/>
+<span id="checkResult"></span>

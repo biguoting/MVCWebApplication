@@ -1,0 +1,17 @@
+D:\project\C#project\MVCWebApplication\MVCWebApplication.Web\bin\MVCWebApplication.Web.dll
+D:\project\C#project\MVCWebApplication\MVCWebApplication.Web\bin\MVCWebApplication.Web.pdb
+D:\project\C#project\MVCWebApplication\MVCWebApplication.Web\obj\Debug\ResolveAssemblyReference.cache
+D:\project\C#project\MVCWebApplication\MVCWebApplication.Web\obj\Debug\MVCWebApplication.Web.dll
+D:\project\C#project\MVCWebApplication\MVCWebApplication.Web\obj\Debug\MVCWebApplication.Web.pdb
+D:\project\C#project\MVCWebApplication\MVCWebApplication.Web\bin\MVCWebApplication.Utils.dll
+D:\project\C#project\MVCWebApplication\MVCWebApplication.Web\bin\MVCWebApplication.Utils.pdb
+D:\project\C#project\MVCWebApplication\MVCWebApplication.Web\bin\MVCWebApplication.DAL.dll
+D:\project\C#project\MVCWebApplication\MVCWebApplication.Web\bin\IBatisNet.Common.dll
+D:\project\C#project\MVCWebApplication\MVCWebApplication.Web\bin\IBatisNet.DataMapper.dll
+D:\project\C#project\MVCWebApplication\MVCWebApplication.Web\bin\IBatisNet.DataAccess.dll
+D:\project\C#project\MVCWebApplication\MVCWebApplication.Web\bin\MVCWebApplication.Models.dll
+D:\project\C#project\MVCWebApplication\MVCWebApplication.Web\bin\IBatisNet.Common.xml
+D:\project\C#project\MVCWebApplication\MVCWebApplication.Web\bin\MVCWebApplication.DAL.pdb
+D:\project\C#project\MVCWebApplication\MVCWebApplication.Web\bin\IBatisNet.DataMapper.xml
+D:\project\C#project\MVCWebApplication\MVCWebApplication.Web\bin\IBatisNet.DataAccess.xml
+D:\project\C#project\MVCWebApplication\MVCWebApplication.Web\bin\MVCWebApplication.Models.pdb

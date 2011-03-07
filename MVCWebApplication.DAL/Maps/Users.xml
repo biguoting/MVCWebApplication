@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<sqlMap namespace="Users"
+	xmlns="http://ibatis.apache.org/mapping"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <resultMaps>
+    <resultMap id="UsersResult" class="MVCWebApplication.Models.Users">
+      <result property="LogonID" column="LogonID"/>
+      <result property="LogonName" column="LogonName"/>
+      <result property="Password" column="Password"/>
+      <result property="EmailAddress" column="EmailAddress"/>
+      <result property="LastLogon" column="LastLogon"/>
+    </resultMap>
+
+  </resultMaps>
+  <statements>
+    <select id="Select" parameterClass="map" resultMap="UsersResult">
+      select  LogonID,LogonName,Password,EmailAddress,LastLogon from `users`
+      <dynamic prepend="WHERE">
+        <isPropertyAvailable property="LogonName" prepend="AND">
+          LogonName like '%$LogonName$%'
+        </isPropertyAvailable>
+      </dynamic>
+    </select>
+  </statements>
+
+</sqlMap>

@@ -1,0 +1,6 @@
+D:\project\C#project\MVCWebApplication\MVCWebApplication.Utils\obj\Debug\ResolveAssemblyReference.cache
+D:\project\C#project\MVCWebApplication\MVCWebApplication.Utils\bin\Debug\MVCWebApplication.Utils.dll
+D:\project\C#project\MVCWebApplication\MVCWebApplication.Utils\bin\Debug\MVCWebApplication.Utils.pdb
+D:\project\C#project\MVCWebApplication\MVCWebApplication.Utils\bin\Debug\log4net.dll
+D:\project\C#project\MVCWebApplication\MVCWebApplication.Utils\obj\Debug\MVCWebApplication.Utils.dll
+D:\project\C#project\MVCWebApplication\MVCWebApplication.Utils\obj\Debug\MVCWebApplication.Utils.pdb

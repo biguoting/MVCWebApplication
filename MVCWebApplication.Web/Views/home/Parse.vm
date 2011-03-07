@@ -1,0 +1,63 @@
+﻿#capturefor(title)
+模板解析器
+#end
+
+#capturefor(head)
+<script type="text/javascript">  
+(function(){
+    $(document).ready(function(){
+        $('#btnParse').click(function(){ 
+            $('#parseResult').html('');
+            ///获取dirctionary和template
+            var map="{";
+            var tag=${tag1};
+            $("#dirctionary tbody tr td").each(function(index){
+                if(index%2==0){
+                    map+="\""+$(this).html()+"\":";
+                }else{
+                    map+="\""+$(this).html()+"\",";
+                }
+            });
+            map=map.substring(0,map.length-1);
+            map+="}"; 
+            var  str= $('#template').text();  
+
+            jQuery.get('/home/getParseResult.htm',{'template':str,'dirctionary':map},function(data){
+                $('#parseResult').html(data);
+             });
+        });  
+    });
+
+})(); 
+
+</script>  
+#end
+#if(${param})
+参数param=${param}
+#end
+<h3>演示NVelocity的模板解析功能</h3>
+<span>模板</span>
+<textarea name="template" id="template" style="width:30em; height:15em">
+Hi,everybody,I'm ${name},this is my personal info：I'm ${age} and come from ${location},I'm ${height} tall and ${weight} weight,hohoho~~~
+</textarea>
+<br /><span>变量字典</span>
+<br />
+<table id="dirctionary" style="width:20em; border-style:solid;">
+<thead>
+<tr style="background-color:Aqua; text-align:center; font-weight:bold"><td>key</td><td>value</td></tr>
+</thead>
+<tbody>
+<tr><td>name</td><td>biguoting</td></tr>
+<tr><td>age</td><td>32</td></tr>
+<tr><td>location</td><td>China</td></tr>
+<tr><td>height</td><td>175cm</td></tr>
+<tr><td>weight</td><td>70kg</td></tr>
+</tbody>
+</table>
+<br />
+<input type="button" id="btnParse" value="— —parse— —"/>
+<br />
+<div>
+<span>解析结果</span>
+<div id="parseResult"></div>
+</div>

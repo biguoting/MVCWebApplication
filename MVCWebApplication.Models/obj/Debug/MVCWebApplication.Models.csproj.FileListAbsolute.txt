@@ -1,0 +1,5 @@
+D:\project\C#project\MVCWebApplication\MVCWebApplication.Models\bin\Debug\MVCWebApplication.Models.dll
+D:\project\C#project\MVCWebApplication\MVCWebApplication.Models\bin\Debug\MVCWebApplication.Models.pdb
+D:\project\C#project\MVCWebApplication\MVCWebApplication.Models\obj\Debug\ResolveAssemblyReference.cache
+D:\project\C#project\MVCWebApplication\MVCWebApplication.Models\obj\Debug\MVCWebApplication.Models.dll
+D:\project\C#project\MVCWebApplication\MVCWebApplication.Models\obj\Debug\MVCWebApplication.Models.pdb

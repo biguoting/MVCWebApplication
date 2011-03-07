@@ -1,0 +1,28 @@
+﻿#capturefor(title)
+Post请求测试页
+#end
+#capturefor(head)
+<script type="text/javascript">  
+(function(){
+    $(document).ready(function(){ 
+    $('#checkRequst').click(function(){
+        var uri=$('#url').attr('value');
+         var param=$('#postData').attr('value');
+         jQuery.get('/people/sendrequest.htm',{'uri':uri,'param':param},function(data){ $('#msg').text(data); }); 
+        //alert(param); 
+    });
+ });
+       
+})(); 
+
+</script>  
+#end
+
+<h3>Post请求测试页功能</h3>
+ 
+<hr />
+请求地址：<input type="text" id="url" name="url" value="http://${authority}/people/querypeople.htm"/> <br />
+请求内容：  <textarea id="postData" name="postData" style="width:30em" rows="10" ></textarea><br /><br />
+<div style="text-align:center; width:30em"><input type="button" value="send" id="checkRequst" name="checkRequst"/></div><br />
+收到消息：  <textarea id="msg" name="msg" style="width:30em"  rows="10" ></textarea><br />
+

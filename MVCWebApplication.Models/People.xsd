@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="People">
+		<xs:annotation>
+			<xs:documentation>Comment describing your root element</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Name" type="xs:string"/>
+				<xs:element name="Age" type="xs:int"/>
+				<xs:element name="Gender" type="xs:string"/>
+				<xs:element name="LoginName" type="xs:string"/>
+				<xs:element name="Password" type="xs:string"/>
+				<xs:sequence>
+					<xs:element name="Favorites">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="Favorite" maxOccurs="unbounded">
+									<xs:complexType>
+										<xs:attribute name="FavoriteName" type="xs:string" use="required"/>
+										<xs:attribute name="FavoriteDesc" type="xs:string" use="required"/>
+									</xs:complexType>
+								</xs:element>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>$!{title}-MVCWeb</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/content/themes/default/easyui.css"/>
+<link rel="stylesheet" type="text/css" href="/content/themes/icon.css"/>
+<script type="text/javascript" src="/content/scripts/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="/content/scripts/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="/content/scripts/easyui-lang-zh_CN.js"></script>
+
+$!{head}
+</head>
+<body>
+<div>
+  $childContent
+</div>
+</body>
+</html>
